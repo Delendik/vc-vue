@@ -1,0 +1,61 @@
+range-color =  #FE4D4A
+.range
+  font-family: Roboto, sans-serif
+  font-style: normal
+  color: #000000
+  position: relative
+  
+  &__container
+    display: flex
+    margin-top: 40px
+    align-items: center
+
+  &__container-text
+    font-weight: 500
+    font-size: 18px
+    line-height: 21px
+    margin: 0
+
+  &__line
+    background-color: #E2E2E2
+    width: 454px
+    height: 9px
+    margin: 0 18px
+    -webkit-appearance: none
+    outline: none
+    &::-webkit-slider-thumb 
+      -webkit-appearance: none;
+      box-sizing: border-box;
+      width: 25px
+      height: 25px
+      background-color: #FFFFFF
+      border-radius: 50%
+      border: 8px solid range-color
+    &::-moz-range-thumb
+      -moz-appearance: none;
+      box-sizing: border-box;
+      width: 25px
+      height: 25px
+      background-color: #FFFFFF
+      border-radius: 50%
+      border: 8px solid #FE4D4A
+  &__value
+    background-color: #FE4D4A
+    color: #FFF
+    font-weight: 500
+    font-size: 16px
+    line-height: 19px
+    padding: 4px 6px
+    position: absolute
+    top: 82px
+    left: -100vw
+    border-radius: 5px
+    &::after 
+      content: "";
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      background:  #FE4D4A;
+      top: 23px;
+      left: 45%;
+      transform: rotate(45deg)
