@@ -1,5 +1,65 @@
 .result
   display: none
+  position: relative
 
   &_visible
     display: block
+
+  &__container
+    display: flex
+    justify-content: space-between
+
+.no-display
+  display: none
+.money
+  position: relative
+  width: 299px
+
+.money__container
+  position: relative
+  height: 56px
+
+.money__image
+  position: absolute
+
+.money__title
+  font-style: normal
+  font-weight: bold
+  font-size: 25px
+  line-height: 29px
+  color: #FE4D4A
+
+.money__subtitle
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 19px
+  color: #000000
+  max-width: 186px
+
+.money__info
+  position absolute
+  max-width: 299px
+  background: rgba(254, 77, 74, 0.9)
+  box-shadow: 0px 9px 10px rgba(254, 77, 74, 0.1)
+  border-radius: 5px
+  color: #FFFFFF
+  padding: 13px 19px 16px
+  font-style: normal
+  font-weight: 500
+  font-size: 14px
+  line-height: 18px
+  top: 165px
+  z-index: 5
+  &::after 
+      content: "";
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      background:  #FE4D4A;
+      top: -3px
+      left: 50%;
+      transform: rotate(45deg)
+
+.money__button
+  background-image: "../../images/info.png"
