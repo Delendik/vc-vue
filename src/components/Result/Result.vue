@@ -1,7 +1,7 @@
 <template>
   <div class="result">
     <h1 class="title">
-      Вы откладываете {{result}} ₽ в месяц. <br>
+      Вы откладываете {{result.toLocaleString('ru')}} ₽ в месяц. <br>
       За три года вы бы заработали:
     </h1>
 
@@ -49,7 +49,7 @@
           <img class="close__coins_52" src="../../images/coins_3.png" />
           <img class="close__coins_51" src="../../images/coins_2.png" />
           
-          <p class="close__close-value">~{{average}} ₽</p>
+          <p class="close__close-value">~{{average.toLocaleString('ru')}} ₽</p>
         </div>
         <p class="close__text">в среднем откладывают читатели vc.ru</p>
         <div class="close__diagrams">
@@ -113,7 +113,7 @@
               />
             </svg>
             <p class="diagrama__procent">{{procent10000}}%</p>
-            <p class="diagrama__text">читателей откладывают больше 10000 ₽ в месяц</p>
+            <p class="diagrama__text">читателей откладывают больше 10 000 ₽ в месяц</p>
           </div>
 
         </div>

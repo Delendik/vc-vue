@@ -2,7 +2,7 @@ const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const VueLoaderPlugin = require('vue-loader');
+const VueLoaderPlugin = require('vue-loader');
 
 module.exports = {
     entry: { main: './src/main.js' },
@@ -39,7 +39,7 @@ module.exports = {
         new HtmlWebpackPlugin({
           template: 'src/public/index.html'
         }),
-        // new VueLoaderPlugin(),
+        new VueLoaderPlugin(),
         new MiniCssExtractPlugin()
       ],
     },
