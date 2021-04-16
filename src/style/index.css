@@ -4,7 +4,8 @@ text {
   line-height: 19px;
   margin: 0;
 }
-title {
+.title {
+  font-family: Roboto;
   font-weight: 500;
   font-size: 22px;
   line-height: 26px;
@@ -19,8 +20,9 @@ title {
 }
 .range__container {
   display: flex;
-  margin-top: 40px;
+  margin-top: 42px;
   align-items: center;
+  justify-content: space-between;
 }
 .range__container-text {
   font-weight: 500;
@@ -62,7 +64,7 @@ title {
   line-height: 19px;
   padding: 4px 6px;
   position: absolute;
-  top: 82px;
+  top: 67px;
   left: -100vw;
   border-radius: 5px;
 }
@@ -79,6 +81,7 @@ title {
 .result {
   display: none;
   position: relative;
+  font-family: Roboto, sans-serif;
 }
 .result_visible {
   display: block;
@@ -86,9 +89,132 @@ title {
 .result__container {
   display: flex;
   justify-content: space-between;
+  padding-top: 13px;
+}
+.result__other-info {
+  background: #feebef;
+}
+.result__open {
+  width: 100%;
+  height: 67px;
+  color: #fe4d4a;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.result__other-text {
+  margin-right: 15px;
+}
+.result__other-text:hover {
+  cursor: pointer;
+}
+.result__close {
+  padding-top: 20px;
+  margin-top: 10px;
 }
 .no-display {
   display: none;
+}
+.close__reader-info {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #fff6f8;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.close__bills {
+  position: absolute;
+}
+.close__bills_20 {
+  position: absolute;
+  top: 62px;
+  left: 50px;
+}
+.close__bills_30 {
+  position: absolute;
+  top: 32px;
+  left: 53px;
+}
+.close__bills_40 {
+  position: absolute;
+  top: 32px;
+  left: 49px;
+}
+.close__bills_51 {
+  position: absolute;
+  top: 31px;
+  left: 33px;
+}
+.close__bills_52 {
+  position: absolute;
+  top: 31px;
+  left: 92px;
+}
+.close__bills_53 {
+  position: absolute;
+  top: 12px;
+  left: 56px;
+}
+.close__coins {
+  position: absolute;
+}
+.close__coins_10 {
+  position: absolute;
+  top: 102px;
+  left: 74px;
+}
+.close__coins_20 {
+  position: absolute;
+  top: 101px;
+  left: 108px;
+}
+.close__coins_30 {
+  position: absolute;
+  top: 101px;
+  left: 111px;
+}
+.close__coins_40 {
+  position: absolute;
+  top: 78px;
+  left: 107px;
+}
+.close__coins_51 {
+  position: absolute;
+  top: 88px;
+  left: 84px;
+}
+.close__coins_52 {
+  position: absolute;
+  top: 50px;
+  left: 114px;
+}
+.close__close-value {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  color: #fe4d4a;
+  margin-bottom: 28px;
+}
+.close__text {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+  margin-top: 9px;
+}
+.close__diagrams {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 20px;
 }
 .money {
   position: relative;
@@ -103,7 +229,7 @@ title {
 }
 .money__title {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 25px;
   line-height: 29px;
   color: #fe4d4a;
@@ -143,4 +269,56 @@ title {
 }
 .money__button {
   background-image: "../../images/info.png";
+}
+.diagrama {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.diagrama__procent {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #fe4d4a;
+  margin-top: 5px;
+  margin-bottom: 9px;
+}
+.diagrama__text {
+  max-width: 190px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000;
+  margin: 0;
+}
+.footer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.footer__text {
+  color: #000;
+  margin-right: 29px;
+}
+.footer__button {
+  width: 134px;
+  height: 45px;
+  background: #fe4d4a;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.footer__button:hover {
+  cursor: pointer;
 }

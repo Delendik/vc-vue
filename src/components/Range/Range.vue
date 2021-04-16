@@ -22,9 +22,6 @@
 <script>
   export default {
     name: 'Range',
-    // render: {
-    //   document.getElementsByClassName('range__value')[0].style= "margin: 50px";
-    // }
     watch: {
       'currentValue': function (v) {
         if (v) {

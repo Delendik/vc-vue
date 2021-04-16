@@ -29,9 +29,11 @@
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
   #app{
     width: 640px;
     margin: 0 auto;
+    padding: 0 25px;
+    box-sizing: border-box;
   }
 </style>
