@@ -1,24 +1,12 @@
-# vc_test
+# Узнай про возможности своих накоплений
 
-## Project setup
-```
-npm install
-```
+**Технологии при создании сайта**
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Данная страница написана на Vue с применением Stylus.
+Выбери сколько средст можешь отложить в месяц и узнай возможности.
+ 
 
-### Compiles and minifies for production
-```
-npm run build
-```
+**Результат**
 
-### Lints and fixes files
-```
-npm run lint
-```
+Сайт: https://delendik.github.io/vc-vue/
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
